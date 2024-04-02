@@ -9,7 +9,7 @@
       "path": "cache.db",
       "cache_id": "glados",
       "store_fakeip": true
-    }
+    } 
   },
   "dns": {
     "servers": [
