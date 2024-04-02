@@ -1,0 +1,294 @@
+{
+    "log": {
+      "level": "error",
+      "timestamp": true
+    },
+    "experimental": {
+      "cache_file": {
+        "enabled": true,
+        "path": "cache.db",
+        "cache_id": "glados",
+        "store_fakeip": true
+      }
+    },
+    "dns": {
+      "servers": [
+        {
+          "tag": "cloudflare",
+          "address": "tls://1.0.0.1",
+          "detour": "direct"
+        },
+        {
+          "tag": "local",
+          "address": "119.29.29.29",
+          "detour": "direct"
+        },
+        {
+          "tag": "gladns",
+          "address_resolver": "local",
+          "detour": "direct",
+          "address": "https://glados-config.com/dns-query"
+        },
+        {
+          "tag": "block",
+          "address": "rcode://success"
+        }
+      ],
+      "final": "cloudflare",
+      "rules": [
+        {
+          "geosite": [
+            "category-pt",
+            "category-public-tracker"
+          ],
+          "server": "block",
+          "disable_cache": false
+        },
+        {
+          "domain_suffix": [
+            "gladns.com"
+          ],
+          "rewrite_ttl": 300,
+          "server": "local"
+        },
+        {
+          "outbound": "any",
+          "rewrite_ttl": 300,
+          "server": "local"
+        },
+        {
+          "geosite": "cn",
+          "server": "local"
+        },
+        {
+          "geosite": "cn",
+          "invert": true,
+          "rewrite_ttl": 900,
+          "server": "gladns"
+        }
+      ],
+      "strategy": "ipv4_only"
+    },
+    "inbounds": [
+      {
+        "type": "tun",
+        "inet4_address": "172.19.0.1/30",
+        "auto_route": true,
+        "strict_route": false,
+        "sniff": true
+      }
+    ],
+    "outbounds": [
+      {
+        "type": "selector",
+        "tag": "Proxy",
+        "outbounds": [
+          "auto",
+          "auto-tw",
+          "akile_us",
+          "auto-uk",
+          "direct"
+        ],
+        "default": "auto"
+      },
+      {
+        "type": "selector",
+        "tag": "Scholar",
+        "outbounds": [
+          "akile_us",
+          "direct"
+        ]
+      },
+      {
+        "type": "selector",
+        "tag": "Express",
+        "outbounds": [
+          "auto",
+          "auto-tw",
+          "auto-uk",
+          "direct"
+        ],
+        "default": "auto"
+      },
+      {
+        "type": "selector",
+        "tag": "Netflix",
+        "outbounds": [
+          "akile_us",
+          "auto-uk",
+          "direct"
+        ],
+        "default": "netflix-tw-01"
+      },
+      {
+        "type": "selector",
+        "tag": "Manually",
+        "outbounds": [
+          "akile_us",
+          "auto-uk",
+          "direct"
+        ]
+      },
+      {
+        "type": "urltest",
+        "tag": "auto",
+        "outbounds": [
+          "akile_us"
+        ],
+        "url": "https://www.gstatic.com/generate_204",
+        "interval": "3m",
+        "tolerance": 50
+      },
+      {
+        "type": "urltest",
+        "tag": "auto-uk",
+        "outbounds": [
+          "akile_us"
+        ],
+        "url": "https://www.gstatic.com/generate_204",
+        "interval": "3m",
+        "tolerance": 50
+      },
+      {
+        "type": "urltest",
+        "tag": "auto-sg",
+        "outbounds": [
+          "akile_us"
+        ],
+        "url": "https://www.gstatic.com/generate_204",
+        "interval": "3m",
+        "tolerance": 50
+      },
+      {
+        "type": "urltest",
+        "tag": "auto-tw",
+        "outbounds": [
+          "akile_us"
+        ],
+        "url": "https://www.gstatic.com/generate_204",
+        "interval": "3m",
+        "tolerance": 50
+      },
+      {
+        "type": "direct",
+        "tag": "direct"
+      },
+      {
+        "type": "block",
+        "tag": "block"
+      },
+      {
+        "type": "dns",
+        "tag": "dns-out"
+      },
+      {
+        "tag": "akile_us",
+        "type": "vless",
+        "server": "89.213.164.37",
+        "server_port": 52560,
+        "uuid": "f79eb729-9e78-4b48-c384-8be93b4871b1",
+        "flow": "xtls-rprx-vision",
+        "network": "tcp",
+        "packet_encoding": "xudp",
+        "tls": {
+          "enabled": true,
+          "server_name": "www.icloud.com",
+          "utls": {
+            "enabled": true,
+            "fingerprint": "chrome"
+          },
+          "reality": {
+            "enabled": true,
+            "public_key": "qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY",
+            "short_id": ",8f,0e94,20e157,da11576f"
+          }
+        }
+      }
+    ],
+    "route": {
+      "rules": [
+        {
+          "protocol": "dns",
+          "outbound": "dns-out"
+        },
+        {
+          "geosite": "cn",
+          "outbound": "direct"
+        },
+        {
+          "port": [25, 26, 222, 465, 587],
+          "outbound": "direct"
+        },
+        {
+          "port": [22],
+          "outbound": "Manually"
+        },
+        {
+          "domain_suffix": [
+            "ifconfig.me"
+          ],
+          "outbound": "Manually"
+        },
+        {
+          "domain_suffix": [
+            ".cn",
+            ".bilibili.com",
+            ".qq.com",
+            ".taobao.com",
+            ".jd.com",
+            ".baidu.com",
+            ".163.com"
+          ],
+          "outbound": "direct"
+        },
+        {
+          "domain_suffix": [
+            "openai.com"
+          ],
+          "outbound": "Scholar"
+        },
+        {
+          "geosite": [
+            "google-scholar",
+            "category-scholar-!cn"
+          ],
+          "outbound": "Scholar"
+        },
+        {
+          "geosite": "netflix",
+          "outbound": "Netflix"
+        },
+        {
+          "geosite": [
+            "youtube",
+            "category-porn",
+            "category-cryptocurrency",
+            "category-entertainment"
+          ],
+          "outbound": "Express"
+        },
+        {
+          "domain_keyword": [
+            "cdn",
+            "download"
+          ],
+          "outbound": "Express"
+        },
+        {
+          "domain_suffix": [
+            "ip.sb"
+          ],
+          "outbound": "Express"
+        },
+        {
+          "geoip": [
+            "private",
+            "cn"
+          ],
+          "outbound": "direct"
+        }
+      ],
+      "auto_detect_interface": true
+    }
+  }
+  
