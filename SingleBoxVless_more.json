@@ -472,7 +472,12 @@
           ".icloud.com",
           ".icloud-content.com",
           ".me.com",
-          ".onedrive.com"
+          ".onedrive.com",
+          ".iqiyi.com",
+          ".huawei.com",
+          ".office365.com"
+
+
         ],
         "outbound": "direct"
       },
