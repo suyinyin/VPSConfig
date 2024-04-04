@@ -190,7 +190,7 @@
       "type": "vless",
       "server": "89.213.164.37",
       "server_port": 52560,
-      "uuid": "f79eb729-9e78-4b48-c384-8be93b4871b1",
+      "uuid": "de713518-39fe-4326-c4db-2a648b321e14",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
@@ -203,7 +203,7 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY",
+          "public_key": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
           "short_id": "da11576fda11576f"
         }
       }
@@ -214,7 +214,7 @@
       "type": "vless",
       "server": "89.213.164.37",
       "server_port": 52560,
-      "uuid": "f79eb729-9e78-4b48-c384-8be93b4871b1",
+      "uuid": "de713518-39fe-4326-c4db-2a648b321e14",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
@@ -227,7 +227,7 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY",
+          "public_key": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
           "short_id": "da11576fda11576f"
         }
       }
@@ -237,7 +237,7 @@
       "type": "vless",
       "server": "89.213.164.37",
       "server_port": 52560,
-      "uuid": "f79eb729-9e78-4b48-c384-8be93b4871b1",
+      "uuid": "de713518-39fe-4326-c4db-2a648b321e14",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
@@ -250,7 +250,7 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY",
+          "public_key": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
           "short_id": "da11576fda11576f"
         }
       }
@@ -260,7 +260,7 @@
       "type": "vless",
       "server": "89.213.164.37",
       "server_port": 52560,
-      "uuid": "f79eb729-9e78-4b48-c384-8be93b4871b1",
+      "uuid": "de713518-39fe-4326-c4db-2a648b321e14",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
@@ -273,7 +273,7 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY",
+          "public_key": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
           "short_id": "da11576fda11576f"
         }
       }
@@ -283,7 +283,7 @@
       "type": "vless",
       "server": "89.213.164.37",
       "server_port": 52560,
-      "uuid": "f79eb729-9e78-4b48-c384-8be93b4871b1",
+      "uuid": "de713518-39fe-4326-c4db-2a648b321e14",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
@@ -296,7 +296,7 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY",
+          "public_key": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
           "short_id": "da11576fda11576f"
         }
       }
@@ -306,7 +306,7 @@
       "type": "vless",
       "server": "89.213.164.37",
       "server_port": 52560,
-      "uuid": "f79eb729-9e78-4b48-c384-8be93b4871b1",
+      "uuid": "de713518-39fe-4326-c4db-2a648b321e14",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
@@ -319,7 +319,7 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY",
+          "public_key": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
           "short_id": "da11576fda11576f"
         }
       }
@@ -329,7 +329,7 @@
       "type": "vless",
       "server": "89.213.164.37",
       "server_port": 52560,
-      "uuid": "f79eb729-9e78-4b48-c384-8be93b4871b1",
+      "uuid": "de713518-39fe-4326-c4db-2a648b321e14",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
@@ -342,7 +342,7 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY",
+          "public_key": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
           "short_id": "da11576fda11576f"
         }
       }
@@ -352,7 +352,7 @@
       "type": "vless",
       "server": "89.213.164.37",
       "server_port": 52560,
-      "uuid": "f79eb729-9e78-4b48-c384-8be93b4871b1",
+      "uuid": "de713518-39fe-4326-c4db-2a648b321e14",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
@@ -365,7 +365,7 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY",
+          "public_key": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
           "short_id": "da11576fda11576f"
         }
       }
@@ -375,7 +375,7 @@
       "type": "vless",
       "server": "89.213.164.37",
       "server_port": 52560,
-      "uuid": "f79eb729-9e78-4b48-c384-8be93b4871b1",
+      "uuid": "de713518-39fe-4326-c4db-2a648b321e14",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
@@ -388,7 +388,7 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY",
+          "public_key": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
           "short_id": "da11576fda11576f"
         }
       }
@@ -398,7 +398,7 @@
       "type": "vless",
       "server": "89.213.164.37",
       "server_port": 52560,
-      "uuid": "f79eb729-9e78-4b48-c384-8be93b4871b1",
+      "uuid": "de713518-39fe-4326-c4db-2a648b321e14",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
@@ -411,7 +411,7 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY",
+          "public_key": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
           "short_id": "da11576fda11576f"
         }
       }
@@ -421,7 +421,7 @@
       "type": "vless",
       "server": "89.213.164.37",
       "server_port": 52560,
-      "uuid": "f79eb729-9e78-4b48-c384-8be93b4871b1",
+      "uuid": "de713518-39fe-4326-c4db-2a648b321e14",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
@@ -434,7 +434,7 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY",
+          "public_key": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
           "short_id": "da11576fda11576f"
         }
       }
