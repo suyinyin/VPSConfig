@@ -510,7 +510,7 @@
       {
         "rule_set": "geoip-us",
         "rule_set_ipcidr_match_source": true,
-        "outbound": "Express"
+        "outbound": "block"
       }
     ],
     "rule_set": [
