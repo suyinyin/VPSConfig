@@ -447,10 +447,6 @@
         "outbound": "dns-out"
       },
       {
-        "geosite": "cn",
-        "outbound": "direct"
-      },
-      {
         "port": [25, 26, 222, 465, 587, 2525],
         "outbound": "direct"
       },
@@ -476,8 +472,6 @@
           ".iqiyi.com",
           ".huawei.com",
           ".office365.com"
-
-
         ],
         "outbound": "direct"
       },
@@ -486,24 +480,6 @@
           "openai.com"
         ],
         "outbound": "Scholar"
-      },
-      {
-        "geosite": [
-          "google-scholar",
-          "category-scholar-!cn"
-        ],
-        "outbound": "Scholar"
-      },
-
-      {
-        "geosite": [
-          "netflix",
-          "youtube",
-          "category-porn",
-          "category-cryptocurrency",
-          "category-entertainment"
-        ],
-        "outbound": "Express"
       },
       {
         "domain_keyword": [
@@ -520,13 +496,48 @@
         "outbound": "Express"
       },
       {
-        "geoip": [
-          "private",
-          "cn"
-        ],
+        "rule_set": "geosite-cn",
         "outbound": "direct"
+      },
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      },
+      {
+        "rule_set": "geoip-cn",
+        "outbound": "direct"
+      },
+      {
+        "rule_set": "geoip-us",
+        "rule_set_ipcidr_match_source": true,
+        "outbound": "Express"
       }
     ],
+    "rule_set": [
+      {
+        "tag": "geosite-cn",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-cn.srs",
+        "download_detour": "Express"
+      },
+      {
+        "tag": "geoip-cn",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-cn.srs",
+        "download_detour": "Express"
+      },
+      {
+        "tag": "geoip-us",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-us.srs",
+        "download_detour": "Express"
+      }
+    ],
+
     "auto_detect_interface": true
   }
 }
+
