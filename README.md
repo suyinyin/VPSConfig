@@ -51,7 +51,7 @@ macOS版下载地址：http://www.hostbuf.com/downloads/finalshell_install.pkg  
     
 ## 安装 X-ui 面板
 
-    bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/956bf85bbac978d56c0e319c5fac2d6db7df9564/install.sh) 0.3.4.4
+    bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install.sh) 0.3.4.4   
 
 
 # X-ui 管理面板设置

@@ -50,12 +50,12 @@ proxies:
 
   - name: Akile_LAXBGPBase_US
     server: 89.213.164.37
-    port: 52560
+    port: 33929
     reality-opts:
-      public-key: g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14
+      public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
     client-fingerprint: chrome
     type: vless
-    uuid: de713518-39fe-4326-c4db-2a648b321e14
+    uuid: 7e163d78-7f06-4732-e17c-593e28dea676
     tls: true
     tfo: false
     flow: xtls-rprx-vision
