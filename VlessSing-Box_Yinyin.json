@@ -15,7 +15,8 @@
     "servers": [
       {
         "tag": "cloudflare",
-        "address": "tls://1.0.0.1",
+        "address": "https://1.1.1.1/dns-query",
+        "address_resolver": "local",
         "detour": "direct"
       },
       {
@@ -24,10 +25,10 @@
         "detour": "direct"
       },
       {
-        "tag": "gladns",
+        "tag": "alidns",
         "address_resolver": "local",
         "detour": "direct",
-        "address": "https://glados-config.com/dns-query"
+        "address": "h3://dns.alidns.com/dns-query"
       },
       {
         "tag": "block",
@@ -46,7 +47,7 @@
       },
       {
         "domain_suffix": [
-          "gladns.com"
+          "alidns.com"
         ],
         "rewrite_ttl": 300,
         "server": "local"
@@ -64,7 +65,7 @@
         "geosite": "cn",
         "invert": true,
         "rewrite_ttl": 900,
-        "server": "gladns"
+        "server": "alidns"
       }
     ],
     "strategy": "ipv4_only"
