@@ -73,84 +73,68 @@ proxies:
 
 proxy-groups:
   - name: Auto-Fast
-    type: "url-test"
-    url: "http://www.gstatic.cn/generate_204"
-    interval: 300
-    tolerance: 100
+    type: select
     proxies:
         - Akile_LAXBGPBase_US
 
   - name: Auto-Edge
-    type: "url-test"
-    url: "http://www.gstatic.cn/generate_204"
-    interval: 900
-    tolerance: 100
+    type: select
     proxies:
         - Akile_LAXBGPBase_US
 
   - name: Auto-Failover
-    type: "url-test"
-    url: "http://www.gstatic.cn/generate_204"
-    interval: 1800
-    tolerance: 100
+    type: select
     proxies:
         - Akile_LAXBGPBase_US
 
   - name: Express
-    type: "fallback"
-    url: "http://www.gstatic.cn/generate_204"
-    interval: 900
-    tolerance: 50
+    type: select
     proxies:
         - Auto-Edge
         - Auto-Fast
         - Auto-Failover
+
   - name: Auto
-    type: "fallback"
-    url: "http://www.gstatic.cn/generate_204"
-    interval: 600
+    type: select
     proxies:
         - Auto-Fast
         - Auto-Edge
         - Auto-Failover
+
   - name: Proxy
     type: "select"
     proxies:
         - Akile_LAXBGPBase_US
        
   - name: Video
-    type: "select"
-    interval: 900
-    url: "http://www.gstatic.cn/generate_204"
+    type: select
     proxies:
         - Express
         - Akile_LAXBGPBase_US
        
   - name: Netflix
-    type: "select"
-    url: "http://www.gstatic.cn/generate_204"
-    interval: 1200
+    type: select
     proxies:
         - Akile_LAXBGPBase_US
         - Auto-Edge
         - DIRECT
 
   - name: Scholar
-    type: "select"
+    type: select
     proxies:
         - Akile_LAXBGPBase_US
         - Proxy
         - DIRECT
 
   - name: Steam
-    type: "select"
+    type: select
     proxies:
         - Akile_LAXBGPBase_US
         - Auto-Edge
         - DIRECT
 
   - name: AppsClean
-    type: "select"
+    type: select
     proxies:
         - REJECT
         - DIRECT
@@ -186,26 +170,27 @@ rules:
 - DOMAIN-SUFFIX,360.cn,DIRECT
 - DOMAIN-SUFFIX,zhihu.com,DIRECT
 - DOMAIN-SUFFIX,com.cn,DIRECT
+- DOMAIN-SUFFIX,bing.com,DIRECT
 
-# allowed safe trackers
-- DOMAIN,graph.instagram.com,DIRECT
-- DOMAIN,www.googleadservices.com,DIRECT
-- DOMAIN,control.kochava.com,DIRECT
-- DOMAIN,www.google-analytics.com,DIRECT
-- DOMAIN,ssl.google-analytics.com,DIRECT
-- DOMAIN,nexus.officeapps.live.com,DIRECT
-- DOMAIN,googleads.g.doubleclick.net,DIRECT
-- DOMAIN,e.crashlytics.com,DIRECT
-- DOMAIN,ib.adnxs.com,DIRECT
-- DOMAIN,safebrowsing.googleapis.com,DIRECT
-- DOMAIN-SUFFIX,googlesyndication.com,DIRECT
-- DOMAIN-SUFFIX,googletagmanager.com,DIRECT
-- DOMAIN-SUFFIX,googletagservices.com,DIRECT
+
 
 #specific geo services
 - DOMAIN-SUFFIX,paypal.com,Proxy
 - DOMAIN-SUFFIX,stripe.com,Proxy
-- DOMAIN-SUFFIX,bing.com,Proxy
+- DOMAIN,graph.instagram.com,Proxy
+- DOMAIN,www.googleadservices.com,Proxy
+- DOMAIN,control.kochava.com,Proxy
+- DOMAIN,www.google-analytics.com,Proxy
+- DOMAIN,ssl.google-analytics.com,Proxy
+- DOMAIN,nexus.officeapps.live.com,Proxy
+- DOMAIN,googleads.g.doubleclick.net,Proxy
+- DOMAIN,e.crashlytics.com,Proxy
+- DOMAIN,ib.adnxs.com,Proxy
+- DOMAIN,safebrowsing.googleapis.com,Proxy
+- DOMAIN-SUFFIX,googlesyndication.com,Proxy
+- DOMAIN-SUFFIX,googletagmanager.com,Proxy
+- DOMAIN-SUFFIX,googletagservices.com,Proxy
+
 
 ##tiktok
 - DOMAIN-SUFFIX,byteoversea.com,Proxy
@@ -224,7 +209,6 @@ rules:
 - DOMAIN-SUFFIX,oaistatic.com,Scholar
 - DOMAIN-SUFFIX,oaiusercontent.com,Scholar
 - DOMAIN-SUFFIX,ai.com,Scholar
-
 - DOMAIN-SUFFIX,hotmail.com,Proxy
 - DOMAIN-SUFFIX,slack.com,Proxy
 - DOMAIN-SUFFIX,live.com,Proxy
@@ -308,6 +292,8 @@ rules:
 - DOMAIN-SUFFIX,trello.com,Proxy
 - DOMAIN-SUFFIX,techsmith.com,Proxy
 - DOMAIN-SUFFIX,thepiratebay.org,Proxy
+
+
 
 - DOMAIN,apiintl.biliapi.net,DIRECT
 - DOMAIN,upos-hz-mirrorakam.akamaized.net,DIRECT
