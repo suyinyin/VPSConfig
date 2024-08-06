@@ -1595,7 +1595,7 @@ rules:
 - PROCESS-NAME,DownloadService.exe,DIRECT
 - PROCESS-NAME,Weiyun.exe,DIRECT
 - PROCESS-NAME,baidunetdisk.exe,DIRECT
-
+- DOMAIN-KEYWORD,hupu,DIRECT
 
 
 ############## PROXY #############################
@@ -1624,12 +1624,6 @@ rules:
 - DOMAIN-SUFFIX,tiktokcdn.com,Proxy
 - DOMAIN-SUFFIX,tiktok.com,Proxy
 - DOMAIN-SUFFIX,tiktokv.com,Proxy
-
-
-
-
-
-
 
 #################### SCHOLAR #########################################
 #specific scholar services
@@ -2361,7 +2355,6 @@ rules:
 - DOMAIN-SUFFIX,biliworld.com,Proxy
 - DOMAIN-SUFFIX,billypan.com,Proxy
 - DOMAIN-SUFFIX,binance.com,Proxy
-- DOMAIN-SUFFIX,bing.com,Proxy
 - DOMAIN-SUFFIX,binux.me,Proxy
 - DOMAIN-SUFFIX,binwang.me,Proxy
 - DOMAIN-SUFFIX,bird.so,Proxy
