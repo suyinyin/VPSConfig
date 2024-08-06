@@ -112,6 +112,12 @@ proxy-groups:
         - Vmiss_HKBGPBASIC_HK
         - DIRECT
 
+  - name: Openai
+    type: select
+    proxies:
+        - Akile_LAXBGPBase_US
+        - DIRECT
+
   - name: AppsClean
     type: select
     proxies:
@@ -1621,8 +1627,6 @@ rules:
 #################### SCHOLAR #########################################
 #specific scholar services
 - DOMAIN-KEYWORD,scholar,Scholar
-- DOMAIN-KEYWORD,openai,Scholar
-- DOMAIN-SUFFIX,openai.com,Scholar
 - DOMAIN-SUFFIX,chatgpt.com,Scholar
 - DOMAIN-SUFFIX,oaistatic.com,Scholar
 - DOMAIN-SUFFIX,oaiusercontent.com,Scholar
@@ -1639,7 +1643,6 @@ rules:
 - DOMAIN-SUFFIX,twimg.com,Proxy
 - DOMAIN-SUFFIX,pinterest.com,Proxy
 - DOMAIN-SUFFIX,auth0.com,Proxy
-- DOMAIN,openaiapi-site.azureedge.net,Proxy
 - DOMAIN-SUFFIX,rxiv.org,Proxy
 - DOMAIN-SUFFIX,acrjournals.org,Proxy
 - DOMAIN-SUFFIX,cademic.eb.com,Proxy
@@ -1681,6 +1684,14 @@ rules:
 - DOMAIN-SUFFIX,opensource.guide,Proxy
 - DOMAIN-SUFFIX,rawgit.com,Proxy
 - DOMAIN-SUFFIX,repo.new,Proxy
+
+# Openai
+
+- DOMAIN-KEYWORD,openai,Openai
+- DOMAIN,openaiapi-site.azureedge.net,Openai
+- DOMAIN-SUFFIX,chat.openai.com,Openai
+- DOMAIN-SUFFIX,openai.com,Openai
+
 
 #discord
 - DOMAIN-KEYWORD,discord,Proxy
@@ -1768,7 +1779,6 @@ rules:
 - DOMAIN-SUFFIX,bit.no.com,Proxy
 - DOMAIN-SUFFIX,btlibrary.me,Proxy
 - DOMAIN-SUFFIX,cccat.io,Proxy
-- DOMAIN-SUFFIX,chat.openai.com,Proxy
 - DOMAIN-SUFFIX,cloudcone.com,Proxy
 - DOMAIN-SUFFIX,dubox.com,Proxy
 - DOMAIN-SUFFIX,gameloft.com,Proxy
@@ -1779,7 +1789,6 @@ rules:
 - DOMAIN-SUFFIX,linkedin.com,Proxy
 - DOMAIN-SUFFIX,myteamspeak.com,Proxy
 - DOMAIN-SUFFIX,notion.so,Proxy
-- DOMAIN-SUFFIX,openai.com,Proxy
 - DOMAIN-SUFFIX,ping.pe,Proxy
 - DOMAIN-SUFFIX,reddit.com,Proxy
 - DOMAIN-SUFFIX,teddysun.com,Proxy
@@ -5549,7 +5558,6 @@ rules:
 - DOMAIN-SUFFIX,ontrac.com,Proxy
 - DOMAIN-SUFFIX,oopsforum.com,Proxy
 - DOMAIN-SUFFIX,open.com.hk,Proxy
-- DOMAIN-SUFFIX,openai.com,Proxy
 - DOMAIN-SUFFIX,openallweb.com,Proxy
 - DOMAIN-SUFFIX,opendemocracy.net,Proxy
 - DOMAIN-SUFFIX,opendn.xyz,Proxy
@@ -8332,7 +8340,6 @@ rules:
 - DOMAIN-SUFFIX,olevod.io,Steam
 - DOMAIN-SUFFIX,olevod.tv,Steam
 - DOMAIN-SUFFIX,olevodtv.com,Steam
-- DOMAIN-KEYWORD,openai,Steam
 - DOMAIN-SUFFIX,auth0.com,Steam
 - DOMAIN-SUFFIX,challenges.cloudflare.com,Steam
 - DOMAIN-SUFFIX,client-api.arkoselabs.com,Steam
@@ -8343,8 +8350,6 @@ rules:
 - DOMAIN-SUFFIX,intercomcdn.com,Steam
 - DOMAIN-SUFFIX,oaistatic.com,Steam
 - DOMAIN-SUFFIX,oaiusercontent.com,Steam
-- DOMAIN-SUFFIX,openai.com,Steam
-- DOMAIN-SUFFIX,openaiapi-site.azureedge.net,Steam
 - DOMAIN-SUFFIX,sentry.io,Steam
 - DOMAIN-SUFFIX,stripe.com,Steam
 - DOMAIN-SUFFIX,pbs.org,Steam
