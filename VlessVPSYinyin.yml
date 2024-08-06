@@ -1698,7 +1698,9 @@ rules:
 - DOMAIN,openaiapi-site.azureedge.net,Openai
 - DOMAIN-SUFFIX,chat.openai.com,Openai
 - DOMAIN-SUFFIX,openai.com,Openai
-
+- DOMAIN-KEYWORD,chatgpt,Openai
+- DOMAIN-SUFFIX,ab.chatgpt.com,Openai
+- DOMAIN-SUFFIX,chatgpt.com,Openai
 
 #discord
 - DOMAIN-KEYWORD,discord,Proxy
