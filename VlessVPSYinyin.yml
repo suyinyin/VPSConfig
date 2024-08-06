@@ -1815,7 +1815,6 @@ rules:
 - DOMAIN-KEYWORD,telegram,Proxy
 - DOMAIN-KEYWORD,twitter,Proxy
 - DOMAIN-KEYWORD,whatsapp,Proxy
-- DOMAIN-KEYWORD,youtube,Proxy
 - DOMAIN-SUFFIX,gfwlist.start,Proxy
 - DOMAIN-SUFFIX,000webhost.com,Proxy
 - DOMAIN-SUFFIX,030buy.com,Proxy
@@ -1980,7 +1979,6 @@ rules:
 - DOMAIN-SUFFIX,aculo.us,Proxy
 - DOMAIN-SUFFIX,adcex.com,Proxy
 - DOMAIN-SUFFIX,addictedtocoffee.de,Proxy
-- DOMAIN-SUFFIX,addyoutube.com,Proxy
 - DOMAIN-SUFFIX,adelaidebbs.com,Proxy
 - DOMAIN-SUFFIX,admob.com,Proxy
 - DOMAIN-SUFFIX,adpl.org.hk,Proxy
@@ -3037,7 +3035,6 @@ rules:
 - DOMAIN-SUFFIX,dlive.tv,Proxy
 - DOMAIN-SUFFIX,dlsite.com,Proxy
 - DOMAIN-SUFFIX,dlsite.jp,Proxy
-- DOMAIN-SUFFIX,dlyoutube.com,Proxy
 - DOMAIN-SUFFIX,dm530.net,Proxy
 - DOMAIN-SUFFIX,dmc.nico,Proxy
 - DOMAIN-SUFFIX,dmcdn.net,Proxy
@@ -3451,8 +3448,6 @@ rules:
 - DOMAIN-SUFFIX,financetwitter.com,Proxy
 - DOMAIN-SUFFIX,finchvpn.com,Proxy
 - DOMAIN-SUFFIX,findmespot.com,Proxy
-- DOMAIN-SUFFIX,findyoutube.com,Proxy
-- DOMAIN-SUFFIX,findyoutube.net,Proxy
 - DOMAIN-SUFFIX,fingerdaily.com,Proxy
 - DOMAIN-SUFFIX,finler.net,Proxy
 - DOMAIN-SUFFIX,firearmsworld.net,Proxy
@@ -3571,7 +3566,6 @@ rules:
 - DOMAIN-SUFFIX,freewww.info,Proxy
 - DOMAIN-SUFFIX,freexinwen.com,Proxy
 - DOMAIN-SUFFIX,freeyellow.com,Proxy
-- DOMAIN-SUFFIX,freeyoutubeproxy.net,Proxy
 - DOMAIN-SUFFIX,frienddy.com,Proxy
 - DOMAIN-SUFFIX,friendfeed-media.com,Proxy
 - DOMAIN-SUFFIX,friendfeed.com,Proxy
@@ -4873,7 +4867,6 @@ rules:
 - DOMAIN-SUFFIX,liquidvpn.com,Proxy
 - DOMAIN-SUFFIX,list-manage.com,Proxy
 - DOMAIN-SUFFIX,listennotes.com,Proxy
-- DOMAIN-SUFFIX,listentoyoutube.com,Proxy
 - DOMAIN-SUFFIX,listorious.com,Proxy
 - DOMAIN-SUFFIX,lithium.com,Proxy
 - DOMAIN-SUFFIX,liu-xiaobo.org,Proxy
@@ -5543,7 +5536,6 @@ rules:
 - DOMAIN-SUFFIX,onion.city,Proxy
 - DOMAIN-SUFFIX,onion.ly,Proxy
 - DOMAIN-SUFFIX,onlinecha.com,Proxy
-- DOMAIN-SUFFIX,onlineyoutube.com,Proxy
 - DOMAIN-SUFFIX,onlygayvideo.com,Proxy
 - DOMAIN-SUFFIX,onlytweets.com,Proxy
 - DOMAIN-SUFFIX,onmoon.com,Proxy
@@ -7431,7 +7423,6 @@ rules:
 - DOMAIN-SUFFIX,wisevid.com,Proxy
 - DOMAIN-SUFFIX,wistia.com,Proxy
 - DOMAIN-SUFFIX,withgoogle.com,Proxy
-- DOMAIN-SUFFIX,withyoutube.com,Proxy
 - DOMAIN-SUFFIX,witnessleeteaching.com,Proxy
 - DOMAIN-SUFFIX,witopia.net,Proxy
 - DOMAIN-SUFFIX,wizcrafts.net,Proxy
@@ -7661,12 +7652,6 @@ rules:
 - DOMAIN-SUFFIX,youthnetradio.org,Proxy
 - DOMAIN-SUFFIX,youthwant.com.tw,Proxy
 - DOMAIN-SUFFIX,youtu.be,Proxy
-- DOMAIN-SUFFIX,youtube-nocookie.com,Proxy
-- DOMAIN-SUFFIX,youtube.com,Proxy
-- DOMAIN-SUFFIX,youtubecn.com,Proxy
-- DOMAIN-SUFFIX,youtubeeducation.com,Proxy
-- DOMAIN-SUFFIX,youtubegaming.com,Proxy
-- DOMAIN-SUFFIX,youtubekids.com,Proxy
 - DOMAIN-SUFFIX,youversion.com,Proxy
 - DOMAIN-SUFFIX,youwin.com,Proxy
 - DOMAIN-SUFFIX,youxu.info,Proxy
@@ -7851,9 +7836,6 @@ rules:
 - DOMAIN-SUFFIX,gvt2.com,Proxy
 - DOMAIN-SUFFIX,gvt3.com,Proxy
 - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,Proxy
-- DOMAIN-SUFFIX,youtu.be,Proxy
-- DOMAIN-SUFFIX,youtube-nocookie.com,Proxy
-- DOMAIN-SUFFIX,youtube.com,Proxy
 - DOMAIN-SUFFIX,yt.be,Proxy
 - DOMAIN-SUFFIX,ytimg.com,Proxy
 - IP-CIDR,74.125.0.0/16,Proxy,
@@ -8421,20 +8403,27 @@ rules:
 - DOMAIN-SUFFIX,viu.now.com,Steam
 - DOMAIN-SUFFIX,viu.tv,Steam
 - DOMAIN-KEYWORD,youtube,Steam
-- DOMAIN,youtubei.googleapis.com,Steam
 - DOMAIN,yt3.ggpht.com,Steam
 - DOMAIN-SUFFIX,googlevideo.com,Steam
 - DOMAIN-SUFFIX,gvt2.com,Steam
-- DOMAIN-SUFFIX,withyoutube.com,Steam
-- DOMAIN-SUFFIX,youtu.be,Steam
-- DOMAIN-SUFFIX,youtube-nocookie.com,Steam
-- DOMAIN-SUFFIX,youtube.com,Steam
-- DOMAIN-SUFFIX,youtubeeducation.com,Steam
-- DOMAIN-SUFFIX,youtubegaming.com,Steam
-- DOMAIN-SUFFIX,youtubekids.com,Steam
-- DOMAIN-SUFFIX,yt.be,Steam
-- DOMAIN-SUFFIX,ytimg.com,Steam
-- DOMAIN,music.youtube.com,Steam
+
+# - DOMAIN-SUFFIX,withyoutube.com,Steam
+# - DOMAIN-SUFFIX,youtu.be,Steam
+# - DOMAIN-SUFFIX,youtube-nocookie.com,Steam
+# - DOMAIN-SUFFIX,youtube.com,Steam
+# - DOMAIN-SUFFIX,youtubeeducation.com,Steam
+# - DOMAIN-SUFFIX,youtubegaming.com,Steam
+# - DOMAIN-SUFFIX,youtubekids.com,Steam
+# - DOMAIN-SUFFIX,yt.be,Steam
+# - DOMAIN-SUFFIX,ytimg.com,Steam
+# - DOMAIN,music.youtube.com,Steam
+# - DOMAIN-SUFFIX,onlineyoutube.com,Steam
+# - DOMAIN-SUFFIX,freeyoutubeproxy.net,Steam
+# - DOMAIN-SUFFIX,listentoyoutube.com,Steam
+# - DOMAIN-SUFFIX,findyoutube.com,Steam
+# - DOMAIN-SUFFIX,findyoutube.net,Steam
+# - DOMAIN-SUFFIX,dlyoutube.com,Steam
+# - DOMAIN-SUFFIX,addyoutube.com,Steam
 
 # Epic
 - DOMAIN-SUFFIX,epicgames.com,Steam
