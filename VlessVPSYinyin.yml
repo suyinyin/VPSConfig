@@ -118,6 +118,13 @@ proxy-groups:
         - Akile_LAXBGPBase_US
         - DIRECT
 
+  - name: Youtube
+    type: select
+    proxies:
+        - Akile_LAXBGPBase_US
+        - Vmiss_HKBGPBASIC_HK
+        - DIRECT
+
   - name: AppsClean
     type: select
     proxies:
@@ -8407,28 +8414,30 @@ rules:
 - DOMAIN-SUFFIX,viu.com,Steam
 - DOMAIN-SUFFIX,viu.now.com,Steam
 - DOMAIN-SUFFIX,viu.tv,Steam
-- DOMAIN-KEYWORD,youtube,Steam
 - DOMAIN,yt3.ggpht.com,Steam
 - DOMAIN-SUFFIX,googlevideo.com,Steam
 - DOMAIN-SUFFIX,gvt2.com,Steam
 
-# - DOMAIN-SUFFIX,withyoutube.com,Steam
-# - DOMAIN-SUFFIX,youtu.be,Steam
-# - DOMAIN-SUFFIX,youtube-nocookie.com,Steam
-# - DOMAIN-SUFFIX,youtube.com,Steam
-# - DOMAIN-SUFFIX,youtubeeducation.com,Steam
-# - DOMAIN-SUFFIX,youtubegaming.com,Steam
-# - DOMAIN-SUFFIX,youtubekids.com,Steam
-# - DOMAIN-SUFFIX,yt.be,Steam
-# - DOMAIN-SUFFIX,ytimg.com,Steam
-# - DOMAIN,music.youtube.com,Steam
-# - DOMAIN-SUFFIX,onlineyoutube.com,Steam
-# - DOMAIN-SUFFIX,freeyoutubeproxy.net,Steam
-# - DOMAIN-SUFFIX,listentoyoutube.com,Steam
-# - DOMAIN-SUFFIX,findyoutube.com,Steam
-# - DOMAIN-SUFFIX,findyoutube.net,Steam
-# - DOMAIN-SUFFIX,dlyoutube.com,Steam
-# - DOMAIN-SUFFIX,addyoutube.com,Steam
+
+# Youtube
+- DOMAIN-KEYWORD,youtube,Youtube
+- DOMAIN-SUFFIX,withyoutube.com,Youtube
+- DOMAIN-SUFFIX,youtu.be,Youtube
+- DOMAIN-SUFFIX,youtube-nocookie.com,Youtube
+- DOMAIN-SUFFIX,youtube.com,Youtube
+- DOMAIN-SUFFIX,youtubeeducation.com,Youtube
+- DOMAIN-SUFFIX,youtubegaming.com,Youtube
+- DOMAIN-SUFFIX,youtubekids.com,Youtube
+- DOMAIN-SUFFIX,yt.be,Youtube
+- DOMAIN-SUFFIX,ytimg.com,Youtube
+- DOMAIN,music.youtube.com,Youtube
+- DOMAIN-SUFFIX,onlineyoutube.com,Youtube
+- DOMAIN-SUFFIX,freeyoutubeproxy.net,Youtube
+- DOMAIN-SUFFIX,listentoyoutube.com,Youtube
+- DOMAIN-SUFFIX,findyoutube.com,Youtube
+- DOMAIN-SUFFIX,findyoutube.net,Youtube
+- DOMAIN-SUFFIX,dlyoutube.com,Youtube
+- DOMAIN-SUFFIX,addyoutube.com,Youtube
 
 # Epic
 - DOMAIN-SUFFIX,epicgames.com,Steam
