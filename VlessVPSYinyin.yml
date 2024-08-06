@@ -1634,7 +1634,6 @@ rules:
 #################### SCHOLAR #########################################
 #specific scholar services
 - DOMAIN-KEYWORD,scholar,Scholar
-- DOMAIN-SUFFIX,chatgpt.com,Scholar
 - DOMAIN-SUFFIX,oaistatic.com,Scholar
 - DOMAIN-SUFFIX,oaiusercontent.com,Scholar
 - DOMAIN-SUFFIX,ai.com,Scholar
