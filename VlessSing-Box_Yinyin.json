@@ -82,97 +82,23 @@
   "outbounds": [
     {
       "type": "selector",
-      "tag": "Proxy",
-      "outbounds": [
-        "auto",
-        "auto-tw",
-        "b1-01",
-        "b1-02",
-        "b1-03",
-        "b1-04",
-        "auto-uk",
-        "direct"
-      ],
-      "default": "auto"
-    },
-    {
-      "type": "selector",
       "tag": "Scholar",
       "outbounds": [
-        "tw-01",
-        "tw-02",
-        "tw-03",
-        "tw-04",
-        "uk-01",
-        "uk-02",
-        "uk-03",
+        "us-01",
+        "hk-01",
         "direct"
-      ]
+      ],
+      "default": "us-01"
     },
     {
       "type": "selector",
       "tag": "Express",
       "outbounds": [
-        "auto",
-        "auto-tw",
-        "auto-uk",
+        "hk-01",
+        "us-01",
         "direct"
       ],
-      "default": "auto"
-    },
-    {
-      "type": "selector",
-      "tag": "Manually",
-      "outbounds": [
-        "b1-01",
-        "b1-02",
-        "b1-03",
-        "b1-04",
-        "auto-uk",
-        "direct"
-      ]
-    },
-    {
-      "type": "urltest",
-      "tag": "auto",
-      "outbounds": [
-        "b1-01",
-        "b1-02",
-        "b1-03",
-        "b1-04",
-        "tw-01",
-        "tw-02",
-        "tw-03",
-        "tw-04"
-      ],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "3m",
-      "tolerance": 50
-    },
-    {
-      "type": "urltest",
-      "tag": "auto-uk",
-      "outbounds": [
-        "uk-01",
-        "uk-02",
-        "uk-03"
-      ],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "3m",
-      "tolerance": 50
-    },
-    {
-      "type": "urltest",
-      "tag": "auto-tw",
-      "outbounds": [
-        "tw-01",
-        "tw-02",
-        "tw-03",
-        "tw-04"
-      ],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "3m",
-      "tolerance": 50
+      "default": "hk-01"
     },
     {
       "type": "direct",
@@ -187,31 +113,7 @@
       "tag": "dns-out"
     },
     {
-      "tag": "uk-01",
-      "type": "vless",
-      "server": "89.213.164.37",
-      "server_port": 33929,
-      "uuid": "7e163d78-7f06-4732-e17c-593e28dea676",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY",
-          "short_id": "c822b269c822b269"
-        }
-      }
-    },
-   
-    {
-      "tag": "uk-02",
+      "tag": "us-01",
       "type": "vless",
       "server": "89.213.164.37",
       "server_port": 33929,
@@ -234,209 +136,25 @@
       }
     },
     {
-      "tag": "uk-03",
+      "tag": "hk-01",
       "type": "vless",
-      "server": "89.213.164.37",
-      "server_port": 33929,
-      "uuid": "7e163d78-7f06-4732-e17c-593e28dea676",
+      "server": "38.47.108.117",
+      "server_port": 37734,
+      "uuid": "c88ba6ef-d0c6-47b7-8113-c0d43decc6dc",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "www.icloud.com",
+        "server_name": "www.speedtest.org",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY",
-          "short_id": "c822b269c822b269"
-        }
-      }
-    },
-    {
-      "tag": "tw-01",
-      "type": "vless",
-      "server": "89.213.164.37",
-      "server_port": 33929,
-      "uuid": "7e163d78-7f06-4732-e17c-593e28dea676",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY",
-          "short_id": "c822b269c822b269"
-        }
-      }
-    },
-    {
-      "tag": "tw-02",
-      "type": "vless",
-      "server": "89.213.164.37",
-      "server_port": 33929,
-      "uuid": "7e163d78-7f06-4732-e17c-593e28dea676",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY",
-          "short_id": "c822b269c822b269"
-        }
-      }
-    },
-    {
-      "tag": "tw-03",
-      "type": "vless",
-      "server": "89.213.164.37",
-      "server_port": 33929,
-      "uuid": "7e163d78-7f06-4732-e17c-593e28dea676",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY",
-          "short_id": "c822b269c822b269"
-        }
-      }
-    },
-    {
-      "tag": "tw-04",
-      "type": "vless",
-      "server": "89.213.164.37",
-      "server_port": 33929,
-      "uuid": "7e163d78-7f06-4732-e17c-593e28dea676",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY",
-          "short_id": "c822b269c822b269"
-        }
-      }
-    },
-    {
-      "tag": "b1-01",
-      "type": "vless",
-      "server": "89.213.164.37",
-      "server_port": 33929,
-      "uuid": "7e163d78-7f06-4732-e17c-593e28dea676",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY",
-          "short_id": "c822b269c822b269"
-        }
-      }
-    },
-    {
-      "tag": "b1-02",
-      "type": "vless",
-      "server": "89.213.164.37",
-      "server_port": 33929,
-      "uuid": "7e163d78-7f06-4732-e17c-593e28dea676",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY",
-          "short_id": "c822b269c822b269"
-        }
-      }
-    },
-    {
-      "tag": "b1-03",
-      "type": "vless",
-      "server": "89.213.164.37",
-      "server_port": 33929,
-      "uuid": "7e163d78-7f06-4732-e17c-593e28dea676",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY",
-          "short_id": "c822b269c822b269"
-        }
-      }
-    },
-    {
-      "tag": "b1-04",
-      "type": "vless",
-      "server": "89.213.164.37",
-      "server_port": 33929,
-      "uuid": "7e163d78-7f06-4732-e17c-593e28dea676",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY",
-          "short_id": "c822b269c822b269"
+          "public_key": "UK7qxWWGfRQcQfwaGpHnqmmqqJBut4jxve8AeDDJ2UI",
+          "short_id": "a3bfb76fa3bfb76f"
         }
       }
     }
