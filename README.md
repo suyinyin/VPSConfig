@@ -51,7 +51,7 @@ macOS版下载地址：http://www.hostbuf.com/downloads/finalshell_install.pkg  
     
 ## 安装 X-ui 面板
 
-    bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install.sh) 0.3.4.4   
+    bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install.sh)
 
 
 # X-ui 管理面板设置
@@ -62,6 +62,12 @@ macOS版下载地址：http://www.hostbuf.com/downloads/finalshell_install.pkg  
 建议将其保存为书签，防止忘记了。
 
 --------------------------------
+# 打开BBR加速
+
+echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
+echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
+sysctl -p
+
 
 ## 三、搭建 Vision 节点申请证书
 
