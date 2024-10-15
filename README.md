@@ -67,6 +67,12 @@ macOS版下载地址：http://www.hostbuf.com/downloads/finalshell_install.pkg  
     echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
     sysctl -p
 
+# 检查BBR是否打开
+    sysctl net.ipv4.tcp_available_congestion_control
+if 打开 return
+    net.ipv4.tcp_available_congestion_control = reno cub bbr
+else return
+    net.ipv4.tcp_available_congestion_control = reno cub
 
 ## 三、搭建 Vision 节点申请证书
 
