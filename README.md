@@ -63,10 +63,9 @@ macOS版下载地址：http://www.hostbuf.com/downloads/finalshell_install.pkg  
 
 --------------------------------
 # 打开BBR加速
-
-echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
-echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
-sysctl -p
+    echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
+    echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
+    sysctl -p
 
 
 ## 三、搭建 Vision 节点申请证书
